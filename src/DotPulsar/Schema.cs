@@ -96,4 +96,10 @@ public static class Schema
     /// Time schema using TimeSpan.
     /// </summary>
     public static TimeSchema Time { get; }
+
+    /// <summary>
+    /// JSON schema.
+    /// </summary>
+    public static JsonSchema<T> Json<T>()
+        => new ();
 }
